@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+<head>
+</head>
+
+<body>
+    <h1>Output page</h1>
+    <img id="im" src="{{ url_for('images', filename=image) }}" />
+    <button id="button" type="button" on_click=click()>next</button>
+</body>
+<script>
+    var img = document.getElementById('im');
+    console.log('img.src: ' + img.src);
+</script>
+</html>
